@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="utf-8">
+  <title>media gallery</title>
+  <script src="https://kit.fontawesome.com/e2c5c377b0.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="css/mini_reset.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="topnav" id="main-nav">
+      <a href= "#" class= "nav-links">one</a>
+      <a href= "#" class= "nav-links">one</a>
+      <a href= "#" class= "nav-links">one</a>
+      <a href= "#" class= "nav-links">one</a>
+      <a href= "#" class= "nav-links">one</a>
+      <a href= "#" class= "nav-links trigram" onclick="navToggle()">&#9776;</a>
+    </nav>
+
+    <section class="slideshow">
+      <div class="slideshow-wrap">
+        <!--slide-->
+        <div class="slide fade">
+          <p class="caption darkft">lorem slide one</p>
+          <img src="img/diner.jpg" alt="slide one">
+        </div>
+        <!--end slide-->
+
+        <!--slide-->
+        <div class="slide fade">
+          <p class="caption">lorem slide two</p>
+          <img src="img/woman.jpg" alt="slide one">
+        </div>
+        <!--end slide-->
+
+        <!--slide-->
+        <div class="slide fade">
+          <p class="caption">lorem slide three</p>
+          <img src="img/sign.jpg" alt="slide one">
+        </div>
+        <!--end slide-->
+
+        <!--slide-->
+        <div class="slide fade">
+          <p class="caption">lorem slide four</p>
+          <img src="img/arcade.jpg" alt="slide one">
+        </div>
+        <!--end slide-->
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div><!--end slideshow wrap-->
+
+      <div class="dot-wrap">
+        <span class="dot" onclick="currentSlide(1)"><img src="img/diner.jpg" alt="slide one"></span>
+        <span class="dot" onclick="currentSlide(2)"><img src="img/woman.jpg" alt="slide one"></span>
+        <span class="dot" onclick="currentSlide(3)"><img src="img/sign.jpg" alt="slide one"></span>
+        <span class="dot" onclick="currentSlide(4)"><img src="img/arcade.jpg" alt="slide one"></span>
+    </div>
+
+    </section>
+
+    <article class="grid-container">
+      <!--card one -->
+      <div class="card one">
+        <div class="thumb"></div>
+        <div class="card-content">
+          <img src="img/face.jpg" alt="card one">
+          <h3>card title</h3>
+          <p class="cardscription"> lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <button id="myBtn" class="more">more</button>
+        </div> <!--end card-content-->
+      </div> <!--end card-->
+
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div>
+          <img src="img/diner.jpg" alt="slide one">
+          <p class="modal-txt"></p>
+        </div>
+        </div>
+      </div>
+
+      <!--card two -->
+      <div class="card two">
+        <div class="thumb"></div>
+        <div class="card-content">
+          <img src="img/face.jpg" alt="card one">
+          <h3>card title</h3>
+          <p class="cardscription"> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <button id="myBtn2" class="more">more</button>
+        </div> <!--end card-content-->
+      </div> <!--end card-->
+
+      <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="img/diner.jpg" alt="slide one">
+        </div>
+      </div>
+
+      <!--card three -->
+      <div class="card three">
+        <div class="thumb"></div>
+        <div class="card-content">
+          <img src="img/face.jpg" alt="card one">
+          <h3>card title</h3>
+          <p class="cardscription" > lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <button id="myBtn3" class="more">more</button>
+        </div> <!--end card-content-->
+      </div> <!--end card-->
+
+      <div id="myModal3" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="img/face.jpg" alt="slide one">
+        </div>
+      </div>
+
+      <!--card four -->
+      <div class="card four">
+        <div class="thumb"></div>
+        <div class="card-content">
+          <img src="img/face.jpg" alt="card one">
+          <h3>card title</h3>
+          <p class="cardscription"> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <button id="myBtn" class="more">more</button>
+        </div> <!--end card-content-->
+      </div> <!--end card-->
+
+      <div id="myModal4" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="img/face.jpg" alt="slide one">
+        </div>
+      </div>
+
+      <!--card five-->
+      <div class="card five">
+        <div class="thumb"></div>
+        <div class="card-content">
+          <img src="img/face.jpg" alt="card one">
+          <h3>card title</h3>
+          <p class="cardscription"> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <button id="myBtn" class="more">more</button>
+        </div> <!--end card-content-->
+      </div> <!--end card-->
+
+      <div id="myModal5" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="img/face.jpg" alt="slide one">
+        </div>
+      </div>
+
+      <!--card six-->
+      <div class="card six">
+        <div class="thumb"></div>
+        <div class="card-content">
+          <img src="img/face.jpg" alt="card one">
+          <h3>card title</h3>
+          <p class="cardscription"> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <button id="myBtn" class="more">more</button>
+        </div> <!--end card-content-->
+      </div> <!--end card-->
+
+      <div id="myModal6" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="img/face.jpg" alt="slide one">
+        </div>
+      </div>
+
+      <!--card seven-->
+      <div class="card seven">
+        <div class="thumb"></div>
+        <div class="card-content">
+          <img src="img/face.jpg" alt="card one">
+          <h3>card title</h3>
+          <p class="cardscription"> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <button id="myBtn" class="more">more</button>
+        </div> <!--end card-content-->
+      </div> <!--end card-->
+
+      <div id="myModal7" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="img/face.jpg" alt="slide one">
+        </div>
+      </div>
+
+      <!--card eight-->
+      <div class="card eight">
+        <div class="thumb"></div>
+        <div class="card-content">
+          <img src="img/face.jpg" alt="card one">
+          <h3>card title</h3>
+          <p class="cardscription"> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <button id="myBtn" class="more">more</button>
+        </div> <!--end card-content-->
+      </div> <!--end card-->
+
+      <div id="myModal8" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="img/face.jpg" alt="slide one">
+        </div>
+      </div>
+
+    </article>
+    <footer>
+      <p class = "copyright">&copy 2019 taylor lee</p>
+    </footer>
+    <script src="js/page.js"></script>
+</body>
+</html>

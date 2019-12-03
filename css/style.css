@@ -1,0 +1,220 @@
+:root {
+  font-size: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+body, section, div, article, aside, h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: bisque;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color:#99c5cf;
+  padding: 1em;
+  flex-direction: column;
+}
+.nav-links {
+  padding: .5em;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Questrial', sans-serif;
+}
+.topnav a:hover {
+  color: #f5c542;
+  transition-delay: 1s;
+  transition: .8s ease-out;
+}
+@media screen and (min-width: 768px) {
+  nav {flex-direction:row;}
+}
+.trigram {
+  font-size: 1.75em;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .topnav a {display: none;}
+  .topnav a.trigram {display: inherit; align-self: flex-end;}
+}
+@media screen and (max-width: 767px) {
+  .topnav.responsive {align-items: center;}
+  .topnav.responsive a {display:inherit;}
+  .topnav.responsive a.trigram {visibility: hidden; position: absolute; right: 3%; top: 2%;}
+  .topnav.responsive a.trigram::after {content:'\000D7'; visibility:visible; text-indent: -.5em;}
+}
+
+/*.one .thumb {
+  background-image: url(img/face.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 50%;
+} */
+
+.grid-container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr;
+}
+
+/* media queries */
+@media screen and (min-width: 550px) {
+  .grid-container { grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (min-width: 768px) {
+  .grid-container { grid-template-columns: repeat(3, 1fr);}
+}
+@media screen and (min-width: 990px) {
+  .grid-container { grid-template-columns: repeat(4, 1fr);}
+}
+/*end media queries */
+h3{
+  font-family: 'Questrial', sans-serif;
+  font-size: 28px;
+  padding: 5px;
+}
+.cardscription {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 18px;
+  padding: 5px;
+}
+.card {
+  box-shadow: gray 1px 2px 3px;
+  background-color: oldlace;
+  background-image: url("img/face.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 10%;
+  transition: all .5s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: gray 2px 3px 4px;
+}
+.card-content {
+  padding: 1em;
+}
+.more {
+  background-color: #99c5cf;
+  border-radius: 10px;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Questrial', sans-serif;
+  font-size: 16px;
+}
+
+/*modal styles*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*slideshow styles*/
+.caption {
+position: absolute;
+bottom: 15px;
+right: 20px;
+font-family: 'Lobster', cursive;
+font-size: 56px;
+color: white;
+}
+.darkft {
+  color:black;
+}
+.slideshow {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  /*padding: 1em;*/
+}
+.slideshow img {
+  width: 100%;
+}
+.slideshow-wrap {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+}
+.prev, .next {
+  width:50px;
+  height:inherit;
+  position: absolute;
+  top: 50%;
+  /*width: auto;*/
+  color: #DDD;
+}
+.next {
+  width:50px;
+  height:inherit;
+  right: 0;
+}
+.prev {
+  width:50px;
+  height:inherit;
+  left: 0;
+}
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.5);
+}
+.dot-wrap {
+  text-align: center;
+}
+.dot {
+  width: 20%;
+  background: #BBB;
+  display: inline-block;
+}
+.dot img {
+  width: 100%;
+}
+.dot.active {
+  background: #333;
+}
+.copyright {
+ padding: 20px;
+ text-align: center;
+}
+.modal-txt {
+ float:right;
+}
